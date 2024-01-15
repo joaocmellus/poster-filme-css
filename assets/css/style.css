@@ -1,0 +1,118 @@
+@import url('https://fonts.cdnfonts.com/css/neutraface-text');
+* {
+    padding: 0;
+    margin: 0;
+    
+    scrollbar-width: thin;
+    scrollbar-color: #047bcf #070d12;
+}
+*::-webkit-scrollbar {
+    width: 10px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #020102;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #765641;
+    border-radius: 20px;
+    border: 2px solid #020102;
+    
+    box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,.5);
+}
+
+body:not(.ended) {
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.shadow {
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 0px 25px 15px rgba(0,0,0,1);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100svh;
+    width: 100%;
+    position: relative;
+
+    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,.5);
+}
+
+.bg-video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -1;
+}
+
+body.ended #initial-video video {
+    animation: gettingOut 3s linear;
+    animation-fill-mode: forwards;
+}
+
+#initial-video div {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: url('https://i0.wp.com/pocilga.com.br/wp-content/uploads/2021/08/his-dark-materials-season-2-poster-hbo-max.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initial-video div h1 {
+    font-family: 'Neutraface Text', sans-serif;
+    font-size: 7em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body.ended #initial-video div{
+    animation: gettingOutBack 6s linear;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@keyframes gettingOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes gettingOutBack {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

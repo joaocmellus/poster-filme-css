@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His Dark Materials</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cards.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-mQHlHo+GG2vBc32YmuXY8IK8K6VcDZUwzNVTdIJb5ap7ILC28vcP5ym7VeYQ2YYg8MkojCeXwxU8hNtgySD1J/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="initial-video" class="video-container" style="padding-bottom: 10px;">
+            <video autoplay class="bg-video" onended="finalize()" async>
+                <source 
+                    src="./assets/media/bg-video.mp4"
+                    type="video/mp4"
+                />
+            </video>
+            <div>
+                <h1>His Dark Materials</h1>
+            </div>
+        </div>
+        <div class="shadow"></div>
+        <section class="cards">
+            <div class="video-container" style="padding-top: 10px; position: absolute;">
+                <video autoplay loop muted class="bg-video" id="smoke" async>
+                    <source 
+                        src="./assets/media/fundo-fumaca-dourada.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+            <div class="card">
+                <img src="./assets/images/1.jpeg" alt="Imagem 1" style="animation-delay: 2s;"/>
+            </div>
+      
+            <div class="card">
+                <img src="./assets/images/2.jpeg" alt="Imagem 2" />
+            </div>
+      
+            <div class="card">
+                <img src="./assets/images/3.jpeg" alt="Imagem 3" style="animation-delay: 1s;"/>
+            </div>
+        </section> 
+    </div>
+    <main>
+        <section class="grid-container-characters">
+            <article class="grid-item-characters">
+                <img style="animation-delay: 1s;" src="https://i.guim.co.uk/img/media/d45c8aebd831b51c2c31362a607688d1066e4d10/478_0_3198_1919/master/3198.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=2ea8ddab82b43e11c1f509e9e60c9b94" alt="#">
+                <h3>Lord Asriel</h3>
+                <span>James McAvoy</span>
+                <p><em>Lord Asriel</em> is a member of the English aristocracy in a parallel universe dominated by an oppressive organization known as the Magisterium.</p>
+            </article>
+            <article class="grid-item-characters">
+                <img src="https://static.independent.co.uk/2022/12/15/12/Amir%20Wilson_Look01__00125%20copy_CREDIT%20DOMIZIA%20SALUSEST.jpg?width=1200&height=1200&fit=crop" alt="#">
+                <h3>Will Parry</h3>
+                <span>Amir Wilson</span>
+                <p><em>Will Parry</em> is the son of John Parry, an explorer, and of Elaine Parry, a woman who suffers from mental problems including obsessive-compulsive disorder and paranoid schizophrenia.</p>
+            </article>
+            <article class="grid-item-characters">
+                <img style="animation-delay: 2s;" src="https://elcomercio.pe/resizer/ClOA7ReIINlYZPcCcnAwM9Jddhk=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5I525SSRCVFAXAAMR5DSQSJYIM.jpg" alt="">
+                <h3>Lyra Belacqua</h3>
+                <span>Dafne Keen</span>
+                <p><em>Lyra Belacqua</em> who adopts the surname Silvertongue given to her by Iorek Byrnison, is a young girl who inhabits a universe parallel to our own.</p>
+            </article>
+        </section>
+        <section class="grid-container-info">
+            <article class="from-description from-text">
+                <h2>From Philip Pullman</h2>
+                <p class="text-middle">Philip Pullman was born in Norwich, England, the son of Audrey Evelyn Pullman (née Merrifield) and Royal Air Force pilot Alfred Outram Pullman. In 1954, when Pullman was seven, his father was killed in a plane crash in Kenya, being posthumously awarded the Distinguished Flying Cross (DFC). <br /> <br />Pullman has since discussed the effect of this, and later revelations about it, on his writing including in the 2017 BBC documentary Imagine His mother remarried the following year and the family moved to Llanbedr in Ardudwy, Wales.</p>
+            </article>
+            <article class="from-description from-image">
+                <img src="https://pbs.twimg.com/amplify_video_thumb/1184435545767927810/img/GrMt0Ufu7iG6Piw2.jpg" alt="">
+            </article>
+            <article class="from-description from-text">
+                <h2>From the books</h2>
+                <p class="text-middle">Based on "The Amber Spyglass," the third novel in Philip Pullman’s award-winning trilogy, the final chapter of this epic fantasy series finds Lyra (Dafne Keen) and Will (Amir Wilson) on a journey to a dark place from which no one has ever returned.  <br /> <br />
+                    His Dark Materials is a trilogy of fantasy novels by Philip Pullman consisting of Northern Lights (1995; published as The Golden Compass in North America), The Subtle Knife (1997), and The Amber Spyglass (2000). It follows the coming of age of two children, Lyra Belacqua and Will Parry, as they wander through a series of parallel universes.</p><br />
+            </article>
+        </section>
+        <footer>
+            <p>Watch on</p>
+            <img style="animation-delay: 0.5s;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3177d583-bb50-4d9e-8aef-0ff58f4fa888/dg18rij-b1c260ee-4ac9-4f74-ad9a-8639563b76da.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMxNzdkNTgzLWJiNTAtNGQ5ZS04YWVmLTBmZjU4ZjRmYTg4OFwvZGcxOHJpai1iMWMyNjBlZS00YWM5LTRmNzQtYWQ5YS04NjM5NTYzYjc2ZGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rOXnoyMl_J6lYGVyKaREMybJPpN11Px6HsAokJ7lQe8" alt="">
+        </footer>
+    </main>
+    <script>
+        function finalize() {
+            document.body.classList.add('ended');
+           
+        }
+    </script>
+</body>
+</html>
