@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/content.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-mQHlHo+GG2vBc32YmuXY8IK8K6VcDZUwzNVTdIJb5ap7ILC28vcP5ym7VeYQ2YYg8MkojCeXwxU8hNtgySD1J/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.jpg">
 </head>
 <body>
     <div class="container">
         <div id="initial-video" class="video-container" style="padding-bottom: 10px;">
-            <video autoplay class="bg-video" onended="finalize()" async>
+            <video autoplay class="bg-video" onended="finalize()"  preload="auto">
                 <source 
                     src="./assets/media/bg-video.mp4"
                     type="video/mp4"
